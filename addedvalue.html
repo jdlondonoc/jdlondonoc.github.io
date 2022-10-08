@@ -18,27 +18,24 @@
 
 <body>
 	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
-		<!--cambié navbar-expand-sm el cual muestra el toggle en pantallas pequeñas, este cambio es para que muestre en medianas también, 
-			lo hice así porque en tamaño tablet por ej el texto estaba quedando muy cerca a los iconos-->
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-				<!--the data-target element se encuentra mas abajo, se usa el id="Navbar" dentro del div que contiene la lista-->
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand order-sm-last" href="./index.html">Julián David Londoño</a>
-			<div class="collapse navbar-collapse" id="Navbar">				
+			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
 					<li class="nav-item"><a class="nav-link" href="./education.html"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
 					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>+ Info</a></li>
+					<li class="nav-item"><a class="nav-link" href="./resources.html"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<header class="jumbotron">
+	<!--<header class="jumbotron">
 		<div class="container">
 			<div class="row row-header">
 				<div class="col-12 col-sm-8">
@@ -48,34 +45,42 @@
 				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
 			</div>
 		</div>
-	</header> 
-	
-	<div class="container">
-		HERE I WILL PUT SOME CONTENT AND THE REASONS WHY I AM A GOOD CHOICE, ALSO USE A BG-IMAGE
-		<div class="Center">
-			<h5>Por ahora te estarás preguntado: ¿Que diferencia hay si contrato a Julián?  Bueno, lo primero que te comento es que mi profesión de Ingeniero Industrial me ha aportado un "Enfoque Sistémico de Procesos" lo cual es bastante útil no solo en procesos, también en desarrollo de software o gestión de proyectos de tecnología.</h5>
-			<h5>Si bien no soy un experto en lenguajes de programación, domino herramientas que se pueden aplicar en diferentes ámbitos: </h5>
+	</header> -->
 
-			<div class="CenterBelow">
+	<div id="value" class="bg-image d-flex justify-content-center align-items-center"
+		 style="background-image: url('https://dl.dropboxusercontent.com/s/gczkzquxeqlh96t/universe-1566161_960_720.jpg?dl=0')">
+
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-2 align-items-left text-white">
+				<h1>Added Value</h1>
+				<p>Discover how I can become your partner in Optimization </p>
+			</div>
+			<div class="col-12 col-md-9 col-lg-10 text-white text-center">
+				<h5>By now you might be wondering: What's the difference with Julian?</h5>
+				<h5>Well, the first thing I could tell is that thanks to my studies in Industrial Engineering:
+				I have a Systematic and process approach to improve or manage any process or service</h5>
+				<h5>Altough I'm not an expert programmer, I can handle several tools which can be applied
+				to data analysis, process improvement and optimization</h5>
 				<h5>
-					<b>Data Science:</b> Puedo participar en proyectos de Extracción & Transformación & visualización de datos ya que domino: <em><mark>Python y PowerBI</mark></em>
-				</h5><hr>
-				<h5>
-					<b>Optimización y automatización de procesos:</b> He desarrollado aplicaciones con <mark><em>Microsoft Access & PowerPlatform </em></mark>
-					<!--en los 2 anteriores h5 ubiqué primero mark y luego em en segundo h5, el primero está al contrario: el resultado es igual, orden no altera -->
-				</h5><hr>
-				<h5><b>Web Development:</b> Estoy familiarizado con herramientas de cada etapa *Back/Front End*. Esta página fue construida usando <mark><em>JavaScript, Css & Html</em></mark></h5>
-			</div>			
+					Next I will resume some of the tools in which Julian has experience or knowledge:<br />
+					* Developed Apps and flows with Microsoft Power Automate and Power Apps<br />
+					* Applied MS Access to stablish software for production control<br />
+					* Data Visualization: I have experience with Power BI: transforming data and creating dashboards and reports<br />
+					* Data Analysis: I have some knowledge on Python and a lot of desire to keep learning this tool<br />
+					* Front-End development: This page was constructed using html , css , bootstrap and some JavaScript
+				</h5>
+			</div>
 		</div>
 	</div>
 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-auto text-center"> <!--ocupa 12 col en xs y auto en medium y large-->
+				<div class="col-12 col-md-auto text-center">
+					<!--ocupa 12 col en xs y auto en medium y large-->
 					<h5>Do you want to know further or contact me? Great! Here are my details:</h5>
 				</div>
-				<div class="offset-1 col-4 col-md"> <!--corro 1 columna , usa 4 col en xs y en medium y large: las que queden-->
+				<div class="offset-1 col-4 col-md">
 					<address>
 						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono"><i class="fa fa-linkedin fa-lg"></i></a>
 						<a class="btn btn-success" href="https://wa.me/3136725990"><i class="fa fa-whatsapp fa-lg"></i></a>

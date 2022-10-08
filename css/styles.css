@@ -96,3 +96,10 @@ img {
         /*alternativa: usar vh para tamaño de img: 50vh ocupa media pantalla*/
     }
 }
+
+#value {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(251, 251, 251, 0.6);
+}
