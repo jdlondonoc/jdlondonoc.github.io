@@ -98,8 +98,13 @@ img {
 }
 
 #value {
-    height: 90vh;
+    min-height: 90vh;
+    /*height: 90vh;*/
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(251, 251, 251, 0.6);
+    background-size: cover;    
+}
+
+.textvalue {
+    background-color: rgba(0.5,0.5,0.5,0.5);
+    width:97%;
 }

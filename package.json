@@ -1,0 +1,24 @@
+{
+  "name": "jdlondonoc.github.io",
+  "version": "1.0.0",
+  "description": "julian page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdlondonoc/jdlondonoc.github.io.git"
+  },
+  "author": "julian londoño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdlondonoc/jdlondonoc.github.io/issues"
+  },
+  "homepage": "https://github.com/jdlondonoc/jdlondonoc.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

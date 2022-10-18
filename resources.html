@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
 	<!--Added Pyscript for Python-->
-	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+	<!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
 	<link rel="stylesheet" href="css/styles.css">
 	<title>Julian's Resources</title>
 	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
@@ -85,30 +86,62 @@
 		</div>
 	</div>
 
-	<!--CALCULADORA-->
+	<!--PYTHON CODE-->
 	<div id="PythModal" class="modal fade" role="dialog">
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Python Chat</h4>
+					<h4 class="modal-title">Python App</h4>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
 				</div>
 				<div class="modal-body">
-					<py-script>
-						import datetime as dt
-						hello = "<p>Hello there!</p>"
-						print (hello)
-						pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
-					</py-script>
+
 					<p>Today's Date is: <label id="date"></label></p>
+					<div id="hi"></div>
+
+					<div class="row row-header p-1">
+						<div class="col-4">
+							<input type="text" class="form-control form-control-sm mr-1" id="name" placeholder="Your name">
+						</div>
+						<div class="col-4">
+							<button type="submit" class="btn btn-success btn-sm ml-1" id="namebtn" pys-onClick='saludo'> Go </button>
+						</div>
+					</div>
+
+					<div id="saludo"></div>
+
+					<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
+					<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
+					</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
+
+					<py-script src="./main.py"></py-script>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
-<!--JUMBOTRON-->
+	<!--EXCEL MODAL-->
+	<div id="ExcelModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Excel File</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+					<iframe width="350" height="150" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8710C114501E95E%2145517&authkey=%21ABaXbgOaVd-Ihr0&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='Sheet1'!A2&Item=Prueba&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--JUMBOTRON-->
 	<header class="jumbotron">
 		<div class="container">
 			<div class="row row-header">
@@ -123,7 +156,7 @@
 
 	<div class="container">
 		<div class="row row-content text-center">
-			<div class="col-12 col-md-6 col-lg-4">
+			<div class="col-12 col-md-6 col-lg-4 p-2">
 				<div class="btn-group">
 					<a href="#CalcuModal" class="btn btn-block nav-link btn-info"
 					   data-toggle="modal" data-html="true">
@@ -132,25 +165,24 @@
 				</div>
 				<br />Convert temperatures from Farehnheit to celsius and viceversa
 			</div>
-			<div class="col-12 col-md-6 col-lg-4">
-				<div class="btn-group">
-					<a href="#CalcuModal" class="btn btn-block nav-link btn-success"
-					   data-toggle="modal" data-html="true">
-						<strong>Normal Calculator</strong>
-					</a>
-				</div>
-				<br />Convert temperatures from Farehnheit to celsius and viceversa
-			</div>
-			<div class="col-12 col-md-6 col-lg-4">
+			<div class="col-12 col-md-6 col-lg-4 p-2">
 				<div class="btn-group">
 					<a href="#PythModal" class="btn btn-block nav-link btn-warning"
 					   data-toggle="modal" data-html="true">
 						<strong>Python Application</strong>
 					</a>
 				</div>
-				<br />Here is some Python content added through pyscript
+				<br />Here is some Python content added through Pyscript
 			</div>
-
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#ExcelModal" class="btn btn-block nav-link btn-success"
+					   data-toggle="modal" data-html="true">
+						<strong>Excel Graphics</strong>
+					</a>
+				</div>
+				<br />Excel graphics
+			</div>
 		</div>
 	</div>
 
@@ -179,7 +211,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+	<!--<script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
 	<!--CALCULADORA-->
 	<script>
 		$(document).ready(function () {
@@ -187,7 +220,7 @@
 				let valor = parseFloat($('#IniTemp').val()); /*se debe usar parseFloat para convertir a num, de lo contrario suma string*/
 				let temp = $("input[name='Temp']:checked").val(); /*captura el valor de los radio para seleccionar el tipo de calculo*/
 				if (isNaN(valor) || valor == 0) {
-					alert("debe ingresar un numero" + temp);
+					alert("debe ingresar un numero");
 					return;
 				};
 				if (temp == "celsi") {
