@@ -111,10 +111,20 @@
 					</div>
 
 					<div id="saludo"></div>
+					<div class="row row-header" id="inputInterest" style='display:none'>
+						<div class="col-3">
+							<input type="text" class="form-control form-control-sm" id="interested">							
+						</div>
+						<div class="col-6">
+							<button type="submit" class="btn btn-success btn-sm" id="interestbtn" pys-onClick='interes'> Go </button>
+						</div>
+						
+					</div>
+					<div id="interest"></div>					
 
 					<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
-					<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
-					</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
+	<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
+	</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
 
 					<py-script src="./main.py"></py-script>
 
@@ -128,7 +138,7 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Excel File</h4>
+					<h4 class="modal-title">Some Excel Utilities</h4>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
@@ -178,10 +188,10 @@
 				<div class="btn-group">
 					<a href="#ExcelModal" class="btn btn-block nav-link btn-success"
 					   data-toggle="modal" data-html="true">
-						<strong>Excel Graphics</strong>
+						<strong>Excel Online</strong>
 					</a>
 				</div>
-				<br />Excel graphics
+				<br />Some Excel utilities like character count and others
 			</div>
 		</div>
 	</div>
@@ -196,7 +206,7 @@
 				<div class="offset-1 col-4 col-md">
 					<address>
 						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono"><i class="fa fa-linkedin fa-lg"></i></a>
-						<a class="btn btn-success" href="https://wa.me/3136725990"><i class="fa fa-whatsapp fa-lg"></i></a>
+						<a class="btn btn-success" href="https://wa.me/573136725990"><i class="fa fa-whatsapp fa-lg"></i></a>
 					</address>
 				</div>
 				<div class="col-6 col-md">
@@ -229,6 +239,9 @@
 				else {
 					$('#FinTemp').val((valor * (9 / 5)) + 32);
 				};
+			});
+			$('#namebtn').click(function () {
+                document.getElementById("inputInterest").style.display = "flex";
 			});
 		});
 	</script>
