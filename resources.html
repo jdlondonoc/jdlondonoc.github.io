@@ -25,7 +25,8 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand order-sm-last" href="./index.html">Julián David Londoño</a>
+			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
+			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
 			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -44,7 +45,7 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Temperature Conversion</h4>
+					<h2 class="modal-title"><strong>Temperature Conversion (using JavaScript)</strong></h2>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
@@ -91,7 +92,7 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Python App</h4>
+					<h2 class="modal-title"><strong>Python App</strong></h2>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
@@ -113,18 +114,18 @@
 					<div id="saludo"></div>
 					<div class="row row-header" id="inputInterest" style='display:none'>
 						<div class="col-3">
-							<input type="text" class="form-control form-control-sm" id="interested">							
+							<input type="text" class="form-control form-control-sm" id="interested">
 						</div>
 						<div class="col-6">
 							<button type="submit" class="btn btn-success btn-sm" id="interestbtn" pys-onClick='interes'> Go </button>
 						</div>
-						
+
 					</div>
-					<div id="interest"></div>					
+					<div id="interest"></div>
 
 					<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
-	<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
-	</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
+					<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
+					</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
 
 					<py-script src="./main.py"></py-script>
 
@@ -138,7 +139,7 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Some Excel Utilities</h4>
+					<h2 class="modal-title"><strong>Some Excel Utilities</strong></h2>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
@@ -150,13 +151,30 @@
 		</div>
 	</div>
 
+	<!--POWER PLATFORM MODAL-->
+	<div id="PowerModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><strong>Power Platform video tutorial</strong></h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5>Time left to Launch of first Video!</h5><br />
+					<p id="PowerDiv"></p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--JUMBOTRON-->
 	<header class="jumbotron">
 		<div class="container">
 			<div class="row row-header">
 				<div class="col-12 col-sm-8">
-					<h1>Utilities and Resources</h1>
+					<h1><strong>Utilities and Resources</strong></h1>
 					<p>Here you can find some useful resources which are not found so easily on web </p>
 				</div>
 				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
@@ -168,7 +186,7 @@
 		<div class="row row-content text-center">
 			<div class="col-12 col-md-6 col-lg-4 p-2">
 				<div class="btn-group">
-					<a href="#CalcuModal" class="btn btn-block nav-link btn-info"
+					<a href="#CalcuModal" class="btn btn-block nav-link btn-warning"
 					   data-toggle="modal" data-html="true">
 						<strong>Temperature Calculator</strong>
 					</a>
@@ -177,7 +195,7 @@
 			</div>
 			<div class="col-12 col-md-6 col-lg-4 p-2">
 				<div class="btn-group">
-					<a href="#PythModal" class="btn btn-block nav-link btn-warning"
+					<a href="#PythModal" class="btn btn-block nav-link btn-info"
 					   data-toggle="modal" data-html="true">
 						<strong>Python Application</strong>
 					</a>
@@ -192,6 +210,15 @@
 					</a>
 				</div>
 				<br />Excel file with Interactive chart which you can edit online or download
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#PowerModal" class="btn btn-block nav-link btn-primary"
+					   data-toggle="modal" data-html="true">
+						<strong>Power Platform Tutorials</strong>
+					</a>
+				</div>
+				<br />Let me teach you some concepts about Power Platform
 			</div>
 		</div>
 	</div>
@@ -241,9 +268,29 @@
 				};
 			});
 			$('#namebtn').click(function () {
-                document.getElementById("inputInterest").style.display = "flex";
+				document.getElementById("inputInterest").style.display = "flex";
 			});
 		});
+		/*a continuacion ingreso funcion para timer Countdown*/
+		//primero establezco fecha objetivo
+		var countDownDate = new Date("Nov 10, 2022 00:00:00").getTime();
+		//actualizo contador cada 1 seg
+		var x = setInterval(function () {
+			var now = new Date().getTime(); //obtengo fecha/hora actual
+			var distance = countDownDate - now; //calculo distancia entre actual y objetivo
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			//a continuacion escribo valores en elemento html
+			document.getElementById("PowerDiv").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds!"
+			// si el tiempo ya pasó, poner texto;
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("PowerDiv").innerHTML = "Ya pasó!";
+			}
+		}, 1000);
+
 	</script>
 
 </body>
