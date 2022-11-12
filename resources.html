@@ -156,15 +156,27 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title"><strong>Power Platform video tutorial</strong></h2>
+					<h2 class="modal-title"><strong>Microsoft Power Platform tutorials</strong></h2>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
 				</div>
 				<div class="modal-body">
-					<h5>Time left to Launch of first Video!</h5><br />
+					<p>Here you'll find tricks and explanation regarding to Power BI, Automate and Apps</p><br />
+					<h5>
+						First, explore and learn various concepts about <strong>Power Apps</strong>,
+						applied through an order application. Here you can access the video:
+					</h5><br />
+					<div class="embed-responsive embed-responsive-16by9"><!--Aspect ratio:16:9, para dejar estático usar propiedad width y height-->
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+					</div>
+					<!--<h5>Time left to Launch of first Video!</h5><br />-->
+					<br />
+					<h5>Don't miss the release of new content, I'll be adding some text to teach you more about Power platform</h5>
+					<h5>Estimated time left:</h5>
 					<p id="PowerDiv"></p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 				</div>
 			</div>
 		</div>
@@ -274,7 +286,7 @@
 		});
 		/*a continuacion ingreso funcion para timer Countdown*/
 		//primero establezco fecha objetivo
-		var countDownDate = new Date("Nov 10, 2022 20:00:00").getTime();
+		var countDownDate = new Date("Nov 26, 2022 20:00:00").getTime();
 		//actualizo contador cada 1 seg
 		var x = setInterval(function () {
 			var now = new Date().getTime(); //obtengo fecha/hora actual
