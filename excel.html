@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Excel Resources</title>
+	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+		<!--cambié navbar-expand-sm el cual muestra el toggle en pantallas pequeñas, este cambio es para que muestre en medianas también,
+			lo hice así porque en tamaño tablet por ej el texto estaba quedando muy cerca a los iconos-->
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<!--the data-target element se encuentra mas abajo, se usa el id="Navbar" dentro del div que contiene la lista-->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
+			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
+			<div class="collapse navbar-collapse" id="Navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
+					<li class="nav-item active"><a class="nav-link" href="./education.html"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
+					<li class="nav-item"><a class="nav-link" href="./addedvalue.html"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
+					<li class="nav-item"><a class="nav-link" href="./resources.html"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row row-header">
+				<div class="col-12 col-sm-8">
+					<h2>Excel Utilities</h2>
+					<p>I share with you this files you can download or edit online, I'm open to suggestions or questions  </p>
+				</div>
+				<!--el sgte div lo dejo vacio para agregar otra cosa-->
+				<div class="d-none d-sm-block col-sm-4"></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row p-2">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+				<div class="card border-secondary">
+					<div class="card-body p-1">
+						<h4 class="card-title">Dinamic Bar Chart</h4>
+						<h6 class="card-subtitle">
+							Quickly change between columns using 1 single bar chart:  
+							<a href="#ExcelModal1" class="btn btn-info" data-toggle="modal" data-html="true">Open!</a> <!--el <a> lo tenia con float-right para que se mantenga siempre a la derecha, lo desactivé mientras-->
+						</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+				<div class="card border-light text-right">
+					<div class="card-body p-1">
+						<h4 class="card-title">Weighted average and Characters Count</h4>
+						<h6 class="card-subtitle">
+							Calculates how many characters your string has : 
+							<a href="#ExcelModal2" class="btn btn-info" data-toggle="modal" data-html="true">Open!</a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Aqui agrego nuevos Excel-->
+		</div>
+	</div>
+
+	<!--MODALS-->
+
+	<div id="ExcelModal1" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><strong>Interactive Chart</strong></h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+					Here I'm adding some explanation
+					<iframe width="700" height="807" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8710C114501E95E%2145517&authkey=%21ABaXbgOaVd-Ihr0&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='ChartBasic_Interactive'!H2&Item='ChartBasic_Interactive'!A1%3AR30&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ExcelModal2" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><strong>Character count and Average</strong></h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+					Here you'll find 2 functions: How to calculate Weighted Averages and character counting
+					<iframe width="350" height="555" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8710C114501E95E%2145517&authkey=%21ABaXbgOaVd-Ihr0&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='Sheet1'!A1&Item='Sheet1'!A1%3AC26&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-auto text-center">
+					<!--ocupa 12 col en xs y auto en medium y large-->
+					<h5><em>"Knowledge grows as it is Shared"</em> Follow me!</h5>
+				</div>
+				<div class="offset-1 col-4 col-md">
+					<!--corro 1 columna , usa 4 col en xs y en medium y large: las que queden-->
+					<address>
+						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+						<a class="btn btn-danger" href="https://www.youtube.com/@juliandavidlondonocifuentes" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+					</address>
+				</div>
+				<div class="col-6 col-md">
+					<address>
+						<!--quité el numero-->
+					</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

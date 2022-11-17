@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
 	<link rel="stylesheet" href="css/styles.css">
+	<py-env>
+- matplotlib
+	</py-env>
 	<title>Julian's Resources</title>
 	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
 
@@ -92,60 +95,42 @@
 		<div class="modal-dialog modal-lg" role="contentinfo">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title"><strong>Python App</strong></h2>
+					<h2 class="modal-title"><strong>Data Analysis and Visualization with Python</strong></h2>
 					<button type="button" class="close" data-dismiss="modal">
 						&times; <!--set an X-->
 					</button>
 				</div>
 				<div class="modal-body">
+					
+						<p>Today's Date is: <label id="date"></label></p>
+						<div id="hi"></div>
 
-					<p>Today's Date is: <label id="date"></label></p>
-					<div id="hi"></div>
-
-					<div class="row row-header p-1">
-						<div class="col-4">
-							<input type="text" class="form-control form-control-sm mr-1" id="name" placeholder="Your name">
-						</div>
-						<div class="col-4">
-							<button type="submit" class="btn btn-success btn-sm ml-1" id="namebtn" pys-onClick='saludo'> Go </button>
-						</div>
-					</div>
-
-					<div id="saludo"></div>
-					<div class="row row-header" id="inputInterest" style='display:none'>
-						<div class="col-3">
-							<input type="text" class="form-control form-control-sm" id="interested">
-						</div>
-						<div class="col-6">
-							<button type="submit" class="btn btn-success btn-sm" id="interestbtn" pys-onClick='interes'> Go </button>
+						<div class="row row-header p-md-1">
+							<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
+								<input type="text" class="form-control form-control-sm mr-1" id="name" placeholder="Your name">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
+								<button type="submit" class="btn btn-success btn-sm ml-1" id="namebtn" pys-onClick='saludo'> Go </button>
+							</div>
 						</div>
 
-					</div>
-					<div id="interest"></div>
+						<div id="saludo"></div>
 
-					<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
-					<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
-					</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
-
-					<py-script src="./main.py"></py-script>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--EXCEL MODAL-->
-	<div id="ExcelModal" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg" role="contentinfo">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h2 class="modal-title"><strong>Some Excel Utilities</strong></h2>
-					<button type="button" class="close" data-dismiss="modal">
-						&times; <!--set an X-->
-					</button>
-				</div>
-				<div class="modal-body">
-					<iframe width="700" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8710C114501E95E%2145517&authkey=%21ABaXbgOaVd-Ihr0&em=2&AllowTyping=True&ActiveCell='ChartBasic_Interactive'!H5&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false"></iframe>
+						<div class="row row-header p-md-1" id="inputInterest" style='display:none'>
+							<div class="col-xs-2 col-sm-3 col-md-4 col-lg-4">
+								<input type="text" class="form-control form-control-sm" id="interested">
+							</div>
+							<div class="col-xs-2 col-6">
+								<button type="submit" class="btn btn-success btn-sm" id="interestbtn" pys-onClick='interes'> Go </button>
+							</div>
+						</div>
+						<div id="interest"></div>
+						<div id="graficos"></div>
+						<div id="grafInsight"></div>
+						<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
+						<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
+						</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
+						<py-script src="./main.py" output="graficos"></py-script>						
 				</div>
 			</div>
 		</div>
@@ -167,7 +152,8 @@
 						First, explore and learn various concepts about <strong>Power Apps</strong>,
 						applied through an order application. Here you can access the video:
 					</h5><br />
-					<div class="embed-responsive embed-responsive-16by9"><!--Aspect ratio:16:9, para dejar estático usar propiedad width y height-->
+					<div class="embed-responsive embed-responsive-16by9">
+						<!--Aspect ratio:16:9, para dejar estático usar propiedad width y height-->
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 					</div>
@@ -187,8 +173,8 @@
 		<div class="container">
 			<div class="row row-header">
 				<div class="col-12 col-sm-8">
-					<h1><strong>Utilities and Resources</strong></h1>
-					<p>Here you can find some useful resources which are not found so easily on web </p>
+					<p><strong>Utilities and Resources</strong></p>
+					<h1>Here you can find some useful resources which are not found so easily on web </h1>
 				</div>
 				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
 			</div>
@@ -210,15 +196,14 @@
 				<div class="btn-group">
 					<a href="#PythModal" class="btn btn-block nav-link btn-info"
 					   data-toggle="modal" data-html="true">
-						<strong>Python Application</strong>
+						<strong>Python Program</strong>
 					</a>
 				</div>
-				<br />Here is some Python content added through Pyscript
+				<br />Python functions and chart added through Pyscript
 			</div>
-			<div class="col-12 col-md-6 col-lg-4 p-2">
+			<div class="col-12 col-md-6 col-lg-4 p-2"><!--el contenido de excel lo pasé a otro html para minimizar tiempo de carga, por lo tanto quito el modal de aqui-->
 				<div class="btn-group">
-					<a href="#ExcelModal" class="btn btn-block nav-link btn-success"
-					   data-toggle="modal" data-html="true">
+					<a href="./excel.html" class="btn btn-block nav-link btn-success">
 						<strong>Excel Interactive Chart</strong>
 					</a>
 				</div>
@@ -231,7 +216,7 @@
 						<strong>Power Platform Tutorials</strong>
 					</a>
 				</div>
-				<br />Let me teach you some concepts about Power Platform				
+				<br />Let me teach you some concepts about Power Platform
 			</div>
 		</div>
 	</div>
