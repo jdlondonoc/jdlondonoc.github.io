@@ -38,7 +38,8 @@ def grafico(*args):
 	insight = "Lower expectative Country: "+ country[posMin] + "<br>" + "Higher expectative Country: " + country[posMax]
 	Element('graficos').write(fig)
 	Element('grafInsight').write(insight)
-
+	
+	#Investigar el uso de Display en esta pag: docs.pyscript.net/latest/reference/API/display.html
 
 def saludo(*args):
 	nombre = Element('name').element.value
