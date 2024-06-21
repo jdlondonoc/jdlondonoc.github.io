@@ -1,0 +1,264 @@
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
+	<!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Prueba de funciones</title>
+	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
+			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
+			<div class="collapse navbar-collapse" id="Navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="./education.html"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
+					<li class="nav-item"><a class="nav-link" href="./addedvalue.html"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--MODALS-->
+	<!--CALCULADORA-->
+	<div id="CalcuModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><strong>Temperature Conversion (using JavaScript)</strong></h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<form>
+						<div class="form-row align-items-center">
+							<div class="form-group col-sm-4">
+								<label class="sr-only" for="IniTemp">Temperature</label>
+								<input type="number" class="form-control form-control-sm mr-1" id="IniTemp" placeholder="Enter temperature">
+							</div>
+							<div class="form-group col-sm-4">
+								<div class="form-check">
+									<div class="form-check-inline">
+										<label class="radio-inline"><input type="radio" name="Temp" value="celsi" checked> <strong>F</strong>ahrenheit <i class="fa fa-arrow-right"></i> <strong>C</strong>elsius</label>
+									</div>
+									<div class="form-check-inline">
+										<label class="radio-inline"><input type="radio" name="Temp" value="fahren"> <strong>C</strong>elsius <i class="fa fa-arrow-right"></i> <strong>F</strong>ahrenheit</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-sm-4">
+								<label class="sr-only" for="FinTemp">Result</label>
+								<input type="number" class="form-control form-control-sm mr-1" id="FinTemp" placeholder="Conversion" disabled>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-12 col-sm-3 col-md-3 col-lg-4"></div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+								<button type="reset" class="btn btn-secondary btn-sm ml-1"> Reset </button>
+								<button type="button" class="btn btn-success btn-sm ml-1" id="CalculaTemp"> Calculate! </button>
+								<button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal"> Cancel </button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--POWER PLATFORM MODAL-->
+	<div id="PowerModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="contentinfo">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><strong>Microsoft Power Platform tutorials</strong></h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times; <!--set an X-->
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Here you'll find tricks and explanation regarding to Power BI, Automate and Apps</p><br />
+					<h5>
+						First, explore and learn various concepts about <strong>Power Apps</strong>,
+						applied through an order application. Here you can access the video:
+					</h5><br />
+					<div class="embed-responsive embed-responsive-16by9">
+						<!--Aspect ratio:16:9, para dejar estático usar propiedad width y height-->
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeCEZYW9GFGIorlpWwWU1EetUDva0sPRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+					</div>
+					<!--<h5>Time left to Launch of first Video!</h5><br />-->
+					<br />
+					<h5>Don't miss the release of new content, I'll be adding some text to teach you more about Power platform</h5>
+					<h5>Estimated time left:</h5>
+					<p id="PowerDiv"></p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--JUMBOTRON-->
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row row-header">
+				<div class="col-12 col-sm-8">
+					<p><strong>Sección Pruebas</strong></p>
+					<h1>contenedores con diferentes funciones </h1>
+				</div>
+				<div class="d-none d-sm-block col-sm-4"><br><em>"Fase pruebas"</em></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container h-50">
+		<div class="row row-content text-center h-100"><!--uso h-# para establecer la altura del div, usa 25-50-75-100%-->
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#CalcuModal" class="btn btn-block nav-link btn-warning"
+					   data-toggle="modal" data-html="true">
+						<strong>Función 1</strong>
+					</a>
+				</div>
+				<br />Crear y consultar registros en BD de postGress?
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#PowerModal" class="btn btn-block nav-link btn-info"
+					   data-toggle="modal" data-html="true">
+						<strong>Función 2</strong>
+					</a>
+				</div>
+				<br />Firma de documentos
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<!--el contenido de excel lo pasé a otro html para minimizar tiempo de carga, por lo tanto quito el modal de aqui-->
+				<div class="btn-group">
+					<a href="./excel.html" class="btn btn-block nav-link btn-success">
+						<strong>Función 3</strong>
+					</a>
+				</div>
+				<br />Reportes - Gráficos
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#PowerModal" class="btn btn-block nav-link btn-primary"
+					   data-toggle="modal" data-html="true">
+						<strong>Función 4</strong>
+					</a>
+				</div>
+				<br />Conjunto de funciones 4
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#PowerModal" class="btn btn-block nav-link btn-warning"
+					   data-toggle="modal" data-html="true">
+						<strong>Función 5</strong>
+					</a>
+				</div>
+				<br />Conjunto de funciones 5
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 p-2">
+				<div class="btn-group">
+					<a href="#PowerModal" class="btn btn-block nav-link btn-danger"
+					   data-toggle="modal" data-html="true">
+						<strong>Función 6</strong>
+					</a>
+				</div>
+				<br />Conjunto de funciones 6
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-auto text-center">
+					<!--ocupa 12 col en xs y auto en medium y large-->
+					<h5>pie de página, accesos de interés:</h5>
+				</div>
+				<div class="offset-1 col-4 col-md">
+					<address>
+						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono"><i class="fa fa-linkedin fa-lg"></i></a>
+						<a class="btn btn-success" href="https://wa.me/573136725990"><i class="fa fa-whatsapp fa-lg"></i></a>
+					</address>
+				</div>
+				<div class="col-6 col-md">
+					<address>
+						<i class="fa fa-phone fa-lg"></i>  (57) 3123456789
+					</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--<script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+	<!--CALCULADORA-->
+	<script>
+		$(document).ready(function () {
+			$('#CalculaTemp').click(function () {
+				let valor = parseFloat($('#IniTemp').val()); /*se debe usar parseFloat para convertir a num, de lo contrario suma string*/
+				let temp = $("input[name='Temp']:checked").val(); /*captura el valor de los radio para seleccionar el tipo de calculo*/
+				if (isNaN(valor) || valor == 0) {
+					alert("debe ingresar un numero");
+					return;
+				};
+				if (temp == "celsi") {
+					$('#FinTemp').val((valor - 32) * (5 / 9));
+				}
+				else {
+					$('#FinTemp').val((valor * (9 / 5)) + 32);
+				};
+			});
+			$('#namebtn').click(function () {
+				document.getElementById("inputInterest").style.display = "flex";
+			});
+		});
+		/*a continuacion ingreso funcion para timer Countdown*/
+		//primero establezco fecha objetivo
+		var countDownDate = new Date("Dec 8, 2022 20:00:00").getTime();
+		//actualizo contador cada 1 seg
+		var x = setInterval(function () {
+			var now = new Date().getTime(); //obtengo fecha/hora actual
+			var distance = countDownDate - now; //calculo distancia entre actual y objetivo
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			//a continuacion escribo valores en elemento html
+			document.getElementById("PowerDiv").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds!"
+			// si el tiempo ya pasó, poner texto;
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("PowerDiv").innerHTML = "Ok Published!!";
+			}
+		}, 1000);
+
+	</script>
+
+</body>
+
+</html>

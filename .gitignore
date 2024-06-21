@@ -1,5 +1,6 @@
 jquery/
 js/
 node_modules/
+.vs/
 test.xlsx
 SIGNATURE.html

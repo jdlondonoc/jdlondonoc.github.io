@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jdlondonoc/jdlondonoc.github.io#readme",
   "devDependencies": {
+    "eslint": "^9.4.0",
     "lite-server": "^2.6.1"
   }
 }
