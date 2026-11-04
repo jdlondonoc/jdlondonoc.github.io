@@ -1,29 +1,27 @@
+<!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<!-- Bootstrap CSS -->
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="How Julián David Londoño connects operations, Power Platform architecture, automation, and AI to deliver practical business solutions.">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<title>Julian's Added Value</title>
-	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/addedvalue.css">
+	<title>Added Value | Julián David Londoño</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
 </head>
 
-<body>
-	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+<body class="value-page">
+	<nav class="navbar navbar-dark navbar-expand-md fixed-top value-nav" aria-label="Main navigation">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+				aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
-			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
+			<a class="navbar-brand order-sm-last" href="./index.html">Julián David Londoño</a>
 			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -36,52 +34,105 @@
 		</div>
 	</nav>
 
-	<!--<header class="jumbotron">
-		<div class="container">
-			<div class="row row-header">
-				<div class="col-12 col-sm-8">
-					<h1>Added Value</h1>
-					<p>Discover how I can become your partner in Optimization </p>
+	<main>
+		<section class="value-hero" id="value">
+			<div class="value-hero-grid" aria-hidden="true"></div>
+			<div class="container value-hero-inner">
+				<p class="value-eyebrow"><span class="value-status-dot"></span> ADDED VALUE / WHAT I BRING</p>
+				<h1>I connect process thinking with <span class="typewriter" id="value-typewriter" aria-hidden="true">practical digital solutions.</span><span class="screen-reader-copy">practical digital solutions.</span></h1>
+				<p class="value-hero-copy">A systems view from an Industrial Engineer, hands-on Power Platform delivery, and the architectural thinking to bring the pieces together.</p>
+				<div class="value-hero-actions">
+					<a class="value-button" href="#value-snapshot">Explore my strengths <span aria-hidden="true">↓</span></a>
+					<a class="value-secondary-link" href="./experience.html">See how I deliver <span aria-hidden="true">↗</span></a>
 				</div>
-				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
+				<div class="value-hero-note"><span class="value-status-dot"></span> PROCESS-FIRST · END-TO-END · OUTCOME-FOCUSED</div>
 			</div>
-		</div>
-	</header> -->
+		</section>
 
-	<div id="value" class="valtext bg-image d-flex justify-content-center align-items-center"
-		 style="background-image: url('https://dl.dropboxusercontent.com/s/gczkzquxeqlh96t/universe-1566161_960_720.jpg?dl=0')">
-
-		<div class="row textvalue">
-			<div class="col-12 col-md-3 col-lg-2 align-items-left text-white">
-				<h1>Added Value</h1>
-				<p>Discover how I can become your partner in Optimization </p>
+		<section class="value-snapshot" id="value-snapshot" aria-labelledby="snapshot-heading">
+			<div class="container">
+				<div class="value-section-heading">
+					<p class="value-eyebrow">01 / EXPERIENCE AT A GLANCE</p>
+					<h2 id="snapshot-heading">A track record grounded in <span>real delivery.</span></h2>
+					<p>Select a highlight to see what it represents.</p>
+				</div>
+				<div class="value-metrics" role="group" aria-label="Professional experience highlights">
+					<button class="value-metric is-selected" type="button" data-insight="operations" aria-pressed="true">
+						<strong>10+</strong><span>years in operations</span><small>ENGINEERING → OPERATIONS</small>
+					</button>
+					<button class="value-metric" type="button" data-insight="platform" aria-pressed="false">
+						<strong>4</strong><span>years in Power Platform</span><small>BUILD → ARCHITECT</small>
+					</button>
+					<button class="value-metric" type="button" data-insight="projects" aria-pressed="false">
+						<strong>15</strong><span>production projects</span><small>DESIGN → DEPLOY</small>
+					</button>
+					<button class="value-metric" type="button" data-insight="leadership" aria-pressed="false">
+						<strong>3</strong><span>developers mentored</span><small>TEAM → GOVERNANCE</small>
+					</button>
+				</div>
+				<div class="value-insight" id="value-insight" aria-live="polite" aria-atomic="true">
+					<span class="value-insight-icon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+					<div>
+						<p class="value-insight-label">OPERATIONS &amp; PROCESS IMPROVEMENT</p>
+						<p class="value-insight-copy">More than a decade across process engineering, production management, and operations coordination—bringing a practical view of how work happens before deciding what to automate.</p>
+					</div>
+					<span class="value-insight-index">01 / 04</span>
+				</div>
 			</div>
-			<div class="col-12 col-md-9 col-lg-10 text-white">
-				<h4 class="text-justify">
-					By now you might be wondering: What can Julian offer to us?<br />
-					<br />
-					Well, the first thing I could tell is that thanks to my studies in Industrial Engineering:
-					I have a systematic and process approach to manage and improve any process or service.
-					<br />
-					Although I'm not an expert programmer, I can handle 
-					several tools which can be applied
-					to data analysis, process improvement and optimization. 
-					Also, due to my <strong>Scrum</strong> certification and experience: I can handle projects in IT industry
-					<br />
-					<br />
-					Next I will resume some of the tools in which Julian has experience or knowledge:<br />
-					<br />
-					* Developed Apps and flows with Microsoft <strong>Power Automate and Power Apps</strong><br />
-					* Applied MS <strong>Access</strong> to stablish software for production control<br />
-					* Data Visualization: I have experience with <strong>Power BI</strong>: transforming data, creating dashboards and reports<br />
-					* Data Analysis: I posses knowledge on <strong>Python</strong> and a lot of desire to keep learning this tool<br />
-					* Front-End development: This page was constructed using <strong>Html, Css, Bootstrap</strong> and some JavaScript
-				</h4>				
-			</div>
-		</div>
-	</div>
+		</section>
 
-	<footer class="footer">
+		<section class="value-approach" aria-labelledby="approach-heading">
+			<div class="container">
+				<div class="value-section-heading">
+					<p class="value-eyebrow">02 / HOW I ADD VALUE</p>
+					<h2 id="approach-heading">I look at the whole system, <span>not just the app.</span></h2>
+					<p>Technology creates value when it fits the work, the people, and the decisions around it.</p>
+				</div>
+				<div class="value-approach-grid">
+					<article class="value-approach-card">
+						<span class="value-card-index">01</span>
+						<span class="value-card-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+						<h3>Process perspective</h3>
+						<p>Use process and systems thinking to understand constraints, handoffs, service levels, and improvement opportunities.</p>
+					</article>
+					<article class="value-approach-card">
+						<span class="value-card-index">02</span>
+						<span class="value-card-icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>
+						<h3>Solution architecture</h3>
+						<p>Connect Power Apps, Power Automate, Dataverse, SharePoint, APIs, and Power BI around the needs of the solution.</p>
+					</article>
+					<article class="value-approach-card">
+						<span class="value-card-index">03</span>
+						<span class="value-card-icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<h3>Delivery &amp; governance</h3>
+						<p>Turn requirements into production-ready work while helping teams establish development standards and maintainable practices.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="value-toolkit" aria-labelledby="toolkit-heading">
+			<div class="container">
+				<div class="value-section-heading">
+					<p class="value-eyebrow">03 / TECHNICAL TOOLKIT</p>
+					<h2 id="toolkit-heading">Tools chosen for <span>the job to be done.</span></h2>
+				</div>
+				<div class="value-toolkit-grid">
+					<div class="value-toolkit-card"><span class="toolkit-index">01</span><i class="fa fa-window-maximize" aria-hidden="true"></i><h3>Power Apps</h3><p>Canvas &amp; model-driven apps, Power Pages</p></div>
+					<div class="value-toolkit-card"><span class="toolkit-index">02</span><i class="fa fa-bolt" aria-hidden="true"></i><h3>Power Automate</h3><p>Cloud flows, Desktop flows, SAP GUI automation</p></div>
+					<div class="value-toolkit-card"><span class="toolkit-index">03</span><i class="fa fa-database" aria-hidden="true"></i><h3>Data &amp; integration</h3><p>Dataverse, SharePoint, REST APIs, SQL</p></div>
+					<div class="value-toolkit-card"><span class="toolkit-index">04</span><i class="fa fa-bar-chart" aria-hidden="true"></i><h3>Insight &amp; AI</h3><p>Power BI, Copilot Studio, Azure AI</p></div>
+				</div>
+				<div class="value-certifications">
+					<span>ALSO INFORMED BY</span>
+					<p>PL-900 · Scrum Master (SMPC) · Lean Manufacturing · Excel / VBA · Access · Python · JSON</p>
+					<a href="./education.html">Explore education <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer value-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-auto text-center">
@@ -106,8 +157,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+	<script src="home.js"></script>
+	<script src="addedvalue.js"></script>
 </body>
 
 </html>

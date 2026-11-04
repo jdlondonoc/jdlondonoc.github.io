@@ -1,99 +1,290 @@
+<!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<!-- Bootstrap CSS -->
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Julián David Londoño Cifuentes — Industrial Engineer focused on process improvement and Microsoft Power Platform solution architecture and development.">
+	<meta name="theme-color" content="#07111f">
+	<title>Julián David Londoño | Power Platform &amp; Process Improvement</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<title>Welcome to JDLC WebPage</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+	<link rel="stylesheet" href="css/home.css">
 </head>
 
-<body>
-	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
-		<!--cambié navbar-expand-sm el cual muestra el toggle en pantallas pequeñas, este cambio es para que muestre en medianas también, 
-			lo hice así porque en tamaño tablet por ej el texto estaba quedando muy cerca a los iconos-->
+<body class="home-page">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" aria-label="Main navigation">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-				<!--the data-target element se encuentra mas abajo, se usa el id="Navbar" dentro del div que contiene la lista-->
+			<a class="navbar-brand" href="./index.html" aria-label="Julián David Londoño home">
+				<span class="brand-mark">JL</span>
+				<span class="brand-name">Julián David Londoño</span>
+			</a>
+			<button class="navbar-toggler" type="button"
+				aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
-			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
 			<div class="collapse navbar-collapse" id="Navbar">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
-					<li class="nav-item"><a class="nav-link" href="./education.html"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
-					<li class="nav-item"><a class="nav-link" href="./addedvalue.html"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
-					<li class="nav-item"><a class="nav-link" href="./resources.html"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
-					<li class="nav-item"><a class="nav-link" href="./testFunciones.html"><span class="fa fa-check fa-lg"></span> Pruebas</a></li>
+				<ul class="navbar-nav ml-auto align-items-lg-center">
+					<li class="nav-item active"><a class="nav-link" href="#home" aria-current="page">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="./experience.html">Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="./education.html">Education</a></li>
+					<li class="nav-item"><a class="nav-link" href="./addedvalue.html">Added value</a></li>
+					<li class="nav-item"><a class="nav-link" href="./resources.html">Resources</a></li>
+					<li class="nav-item"><a class="nav-link" href="./testFunciones.html">Playground</a></li>
+					<li class="nav-item nav-contact"><a class="nav-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	
-	<div id="intro" class="bg-image d-flex justify-content-center align-items-center" 
-		style="background-image: url('https://dl.dropboxusercontent.com/s/jh40hz136wbtfen/gears-1311171_960_720.jpg?dl=0');" >
-			<!--link anterior, otra img: url('https://dl.dropboxusercontent.com/s/nv6g6gga3dt0xbl/field-5065671_960_720.jpg?dl=0') -->
-		<div class="text-white text-center">
-			<h1>Welcome to <strong>Julian Londono's </strong> Page</h1>
-			<h4>Industrial Engineer, Experienced in Process Improvement and Software Development for task Automation</h4><!--tenía: and Coordination of operation teams-->
-		</div>
-	</div>	
 
-	<div class="container">
-		<div class="row row-content text-center">
-			<div class="col-12">				
-				<p>
-					I specialize in Processs Optimization and Automation of operative tasks, applying programming tools, Data Analysis and Visualization.
-					<br>With the aim to be a strategic allied in process improvement and decision making.
-				</p>
+	<main>
+		<section class="hero-section" id="home">
+			<div class="hero-grid" aria-hidden="true"></div>
+			<div class="container hero-content">
+				<div class="row align-items-center">
+					<div class="col-lg-7 hero-copy">
+						<p class="eyebrow"><span class="status-dot"></span> PROCESS · PLATFORM · OUTCOMES</p>
+						<h1>I turn complex operations into <span>well-designed digital solutions.</span></h1>
+						<p class="hero-role">Industrial Engineer <span aria-hidden="true">/</span> Power Platform &amp; AI Solutions Architect</p>
+						<p class="hero-description">
+							I design end-to-end digital solutions that connect process improvement with Power Platform
+							and AI—from requirements and architecture through deployment and production monitoring.
+						</p>
+						<div class="hero-actions">
+							<a class="button-primary" href="./experience.html">Explore my experience <span aria-hidden="true">→</span></a>
+							<a class="button-text" href="#approach">How I think about solutions <span aria-hidden="true">↓</span></a>
+						</div>
+						<div class="hero-proof" aria-label="Experience highlights">
+							<div><strong>10+</strong><span>years in operations</span></div>
+							<div><strong>4</strong><span>years in Power Platform</span></div>
+							<div><strong>15</strong><span>production projects</span></div>
+						</div>
+					</div>
+					<div class="col-lg-5 hero-visual">
+						<div class="blueprint-card">
+							<div class="blueprint-topline">
+								<span><span class="status-dot"></span> SOLUTION BLUEPRINT</span>
+								<span class="blueprint-index">END TO END</span>
+							</div>
+							<div class="blueprint-flow">
+								<div class="flow-node">
+									<span class="node-icon"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+									<span><small>01 / DISCOVER</small><strong>Understand the process</strong></span>
+									<span class="node-check" aria-hidden="true">✓</span>
+								</div>
+								<div class="flow-connector" aria-hidden="true"></div>
+								<div class="flow-node flow-node-active">
+									<span class="node-icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>
+									<span><small>02 / DESIGN</small><strong>Shape the solution</strong></span>
+									<span class="node-check" aria-hidden="true">↗</span>
+								</div>
+								<div class="flow-connector" aria-hidden="true"></div>
+								<div class="flow-node">
+									<span class="node-icon"><i class="fa fa-random" aria-hidden="true"></i></span>
+									<span><small>03 / DELIVER</small><strong>Automate the workflow</strong></span>
+									<span class="node-check" aria-hidden="true">✓</span>
+								</div>
+								<div class="flow-connector" aria-hidden="true"></div>
+								<div class="flow-node">
+									<span class="node-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+									<span><small>04 / IMPROVE</small><strong>Measure and refine</strong></span>
+									<span class="node-check" aria-hidden="true">↻</span>
+								</div>
+							</div>
+							<div class="blueprint-footer">
+								<span>BUILT AROUND THE PROCESS</span>
+								<span class="blueprint-live"><span class="status-dot"></span> OUTCOME-FOCUSED</span>
+							</div>
+						</div>
+						<div class="floating-tag"><span aria-hidden="true">✳</span> People + process + technology</div>
+					</div>
+				</div>
 			</div>
-		</div>
+			<a class="scroll-cue" href="#approach"><span></span> SCROLL TO EXPLORE</a>
+		</section>
 
-		<div class="row row-content align-items-center">
-			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-				<h3>Here's a short brief of what you can find on Julian's page</h3>
+		<section class="section-shell approach-section" id="approach">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">01 / MY APPROACH</p>
+					<h2>Good architecture starts <span>before the first app.</span></h2>
+					<p>I start with the work itself, then shape technology around the people, information, and decisions that move it forward.</p>
+				</div>
+				<div class="approach-grid">
+					<article class="approach-card">
+						<span class="card-number">01</span>
+						<div class="approach-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+						<h3>Understand</h3>
+						<p>Map the workflow, clarify the problem, and identify where time, quality, or control can improve.</p>
+						<span class="card-caption">PROCESS FIRST</span>
+					</article>
+					<article class="approach-card">
+						<span class="card-number">02</span>
+						<div class="approach-icon"><i class="fa fa-object-group" aria-hidden="true"></i></div>
+						<h3>Design</h3>
+						<p>Choose a fit-for-purpose solution across apps, automation, data, and reporting—not technology for its own sake.</p>
+						<span class="card-caption">THINK IN SYSTEMS</span>
+					</article>
+					<article class="approach-card">
+						<span class="card-number">03</span>
+						<div class="approach-icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+						<h3>Deliver</h3>
+						<p>Build useful tools and connected workflows that support day-to-day operations and process control.</p>
+						<span class="card-caption">MAKE IT PRACTICAL</span>
+					</article>
+					<article class="approach-card">
+						<span class="card-number">04</span>
+						<div class="approach-icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+						<h3>Improve</h3>
+						<p>Use process indicators and operational insight to evaluate what works and find the next opportunity.</p>
+						<span class="card-caption">KEEP LEARNING</span>
+					</article>
+				</div>
+				<details class="architecture-detail">
+					<summary><span class="detail-symbol" aria-hidden="true">+</span> What does this look like in practice?</summary>
+					<div class="detail-content">
+						<p>For an operational challenge, I look at the process, its users, and the information it depends on together. That helps me connect a Power Apps interface or a Power Automate flow with the reporting and indicators needed to understand the result.</p>
+						<p>My experience also includes process-control applications with Access and automation using Excel, VBA, and SQL—useful context when choosing how a solution should fit into existing work.</p>
+					</div>
+				</details>
 			</div>
-			
-			<div class="col-xs-10 col-sm-7 col-md-8 col-lg">
-				<h4>Experience <a href="./experience.html"><i class="fa fa-industry"></i></a></h4>
-				<p class="d-none d-sm-block">Navigate through Julian's Experience Timeline.</p>
-				<h4>Education <a href="./education.html"><i class="fa fa-graduation-cap"></i></a></h4>
-				<p class="d-none d-sm-block">Find out my technical background and the things that I most enjoy</p>
-				<h4>Added Value <a href="./addedvalue.html"><i class="fa fa-user-plus"></i></a></h4>
-				<p class="d-none d-sm-block">Discover how Julian can help you boost and improve performance of any process</p>
-				<h4>Useful Resources <a href="./resources.html"><i class="fa fa-gear"></i></a></h4>
-				<p class="d-none d-sm-block">Try some useful applications for daily living developed for this site, 
-				like temperature conversion, Excel interactive chart, or Tutorials of power platform</p>
-			</div>
-		</div>
-	</div>
+		</section>
 
-	<footer class="footer">
+		<section class="platform-section">
+			<div class="container">
+				<div class="row align-items-end platform-heading">
+					<div class="col-lg-7">
+						<p class="eyebrow">02 / TECHNICAL TOOLKIT</p>
+						<h2>Architecture across <span>the full solution.</span></h2>
+					</div>
+					<div class="col-lg-5">
+						<p>Designing for the full lifecycle means connecting user experience, automation, data, integration, and insight—not just building an isolated app.</p>
+					</div>
+				</div>
+				<div class="architecture-map">
+					<div class="architecture-layers" aria-label="Solution architecture layers">
+						<div class="architecture-layer">
+							<span class="layer-index">04</span>
+							<span class="layer-name">INSIGHT</span>
+							<div class="layer-tools"><span>Power BI</span><span>Excel / Power Query</span></div>
+						</div>
+						<div class="architecture-layer">
+							<span class="layer-index">03</span>
+							<span class="layer-name">DATA &amp; INTEGRATION</span>
+							<div class="layer-tools"><span>Dataverse</span><span>SharePoint</span><span>REST APIs</span><span>SQL</span></div>
+						</div>
+						<div class="architecture-layer">
+							<span class="layer-index">02</span>
+							<span class="layer-name">AUTOMATION &amp; AI</span>
+							<div class="layer-tools"><span>Power Automate</span><span>Copilot Studio</span><span>Azure AI</span></div>
+						</div>
+						<div class="architecture-layer">
+							<span class="layer-index">01</span>
+							<span class="layer-name">EXPERIENCE</span>
+							<div class="layer-tools"><span>Power Apps</span><span>Power Pages</span></div>
+						</div>
+						<p class="architecture-foundation"><i class="fa fa-sitemap" aria-hidden="true"></i> PROCESS, USERS &amp; BUSINESS OUTCOMES</p>
+					</div>
+					<article class="case-study-card">
+						<p class="case-study-label"><span class="status-dot"></span> SELECTED SOLUTION</p>
+						<h3>Document management, end to end.</h3>
+						<p class="case-study-intro">A connected solution for administrative and archival services, designed around the document workflow.</p>
+						<div class="case-study-step"><span>01</span><p><strong>Power Apps</strong> — custom Canvas app for process data entry</p></div>
+						<div class="case-study-step"><span>02</span><p><strong>Dataverse</strong> — structured data layer</p></div>
+						<div class="case-study-step"><span>03</span><p><strong>Power Automate</strong> — cloud flows to automate document-table generation</p></div>
+						<div class="case-study-step"><span>04</span><p><strong>Power BI</strong> — report for process visibility and tracking</p></div>
+						<p class="case-study-outcome">Connected architecture · Less manual document handling · Operational visibility</p>
+					</article>
+				</div>
+				<div class="platform-grid">
+					<article class="platform-card">
+						<div class="platform-card-head">
+							<span class="platform-symbol"><i class="fa fa-window-maximize" aria-hidden="true"></i></span>
+							<span class="platform-label">APP EXPERIENCE</span>
+						</div>
+						<h3>Power Apps</h3>
+						<p>Design and deliver Canvas and model-driven applications that support standardized data entry and operational workflows.</p>
+						<div class="platform-tags"><span>Canvas</span><span>Model-driven</span><span>Power Pages</span></div>
+					</article>
+					<article class="platform-card platform-card-featured">
+						<div class="platform-card-head">
+							<span class="platform-symbol"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+							<span class="platform-label">AUTOMATION &amp; AI</span>
+						</div>
+						<h3>Power Automate</h3>
+						<p>Build Cloud and Desktop flows, including SAP GUI automation, to orchestrate connected business processes.</p>
+						<div class="platform-tags"><span>Cloud flows</span><span>Desktop flows</span><span>Copilot Studio</span></div>
+					</article>
+					<article class="platform-card">
+						<div class="platform-card-head">
+							<span class="platform-symbol"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+							<span class="platform-label">DATA &amp; INSIGHT</span>
+						</div>
+						<h3>Power BI</h3>
+						<p>Transform operational data into reports and dashboards for process visualization, tracking, and decisions.</p>
+						<div class="platform-tags"><span>Data modeling</span><span>Reporting</span><span>KPIs</span></div>
+					</article>
+				</div>
+				<div class="toolbelt">
+					<span class="toolbelt-label">CERTIFIED &amp; ADDITIONAL TOOLS</span>
+					<div class="toolbelt-items">
+						<span>Power Platform Fundamentals (PL-900)</span><span>Scrum Master (SMPC)</span><span>Lean Manufacturing</span><span>Excel / VBA</span><span>Access</span><span>SQL</span><span>Python</span><span>JSON</span>
+					</div>
+					<a href="./education.html">Explore education <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-shell experience-section">
+			<div class="container experience-panel">
+				<div class="experience-copy">
+					<p class="eyebrow">03 / DELIVERY EXPERIENCE</p>
+					<h2>Architecture that reaches <span>production.</span></h2>
+					<p>From technical strategy and requirements analysis to deployment and production monitoring, I have delivered 15 production projects across the Microsoft low-code ecosystem and helped teams build consistent, maintainable solutions.</p>
+					<a class="button-primary" href="./experience.html">View experience timeline <span aria-hidden="true">→</span></a>
+				</div>
+				<div class="experience-highlights">
+					<div class="highlight-item">
+						<span class="highlight-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+						<div><h3>10+ years in operations</h3><p>Process improvement, team leadership, service levels, and operational performance.</p></div>
+					</div>
+					<div class="highlight-item">
+						<span class="highlight-icon"><i class="fa fa-code-fork" aria-hidden="true"></i></span>
+						<div><h3>4 years in Power Platform</h3><p>Apps, Cloud and Desktop flows, Copilot Studio, and end-to-end architecture.</p></div>
+					</div>
+					<div class="highlight-item">
+						<span class="highlight-icon"><i class="fa fa-area-chart" aria-hidden="true"></i></span>
+						<div><h3>Technical leadership</h3><p>Led and mentored developers; established standards, governance frameworks, and best practices.</p></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" id="contact">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-auto text-center"> <!--ocupa 12 col en xs y auto en medium y large-->
-					<h5>Do you want to know further or contact me? Great! Here are my details:</h5>
+			<div class="footer-main">
+				<div>
+					<p class="eyebrow">HAVE A PROCESS TO IMPROVE?</p>
+					<h2>Let's make it work <span>better.</span></h2>
+					<p>Explore my work or get in touch to talk about process improvement and Power Platform.</p>
 				</div>
-				<div class="offset-1 col-4 col-md"> <!--corro 1 columna , usa 4 col en xs y en medium y large: las que queden-->
-					<address>
-						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono"><i class="fa fa-linkedin fa-lg"></i></a>
-						<a class="btn btn-success" href="https://wa.me/573136725990"><i class="fa fa-whatsapp fa-lg"></i></a>
-					</address>
-				</div>
-				<div class="col-6 col-md">
-					<address>
-						<i class="fa fa-phone fa-lg"></i>  (57) 3136725990
-					</address>
+				<a class="button-primary footer-cta" href="https://www.linkedin.com/in/jullondono" target="_blank" rel="noopener noreferrer">
+					Connect on LinkedIn <span aria-hidden="true">↗</span>
+				</a>
+			</div>
+			<div class="footer-bottom">
+				<span>© Julián David Londoño Cifuentes</span>
+				<div class="footer-links">
+					<a href="https://www.linkedin.com/in/jullondono" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+						<i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+					</a>
+					<a href="https://wa.me/573136725990" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+						<i class="fa fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span>
+					</a>
+					<a href="tel:+573136725990"><i class="fa fa-phone" aria-hidden="true"></i><span>Call</span></a>
 				</div>
 			</div>
 		</div>
@@ -102,8 +293,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+	<script src="home.js"></script>
 </body>
 
 </html>
