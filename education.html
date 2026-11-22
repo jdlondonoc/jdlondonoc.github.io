@@ -1,37 +1,32 @@
+<!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<!-- Bootstrap CSS -->
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore Julián David Londoño's formal education, Power Platform, agile, and technical training.">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<title>Julian's Education</title>
-	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
-
+	<link rel="stylesheet" href="css/addedvalue.css">
+	<link rel="stylesheet" href="css/education.css">
+	<title>Education | Julián David Londoño</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
-<body>
-	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
-		<!--cambié navbar-expand-sm el cual muestra el toggle en pantallas pequeñas, este cambio es para que muestre en medianas también, 
-			lo hice así porque en tamaño tablet por ej el texto estaba quedando muy cerca a los iconos-->
+<body class="value-page education-page">
+	<nav class="navbar navbar-dark navbar-expand-md fixed-top value-nav" aria-label="Main navigation">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-				<!--the data-target element se encuentra mas abajo, se usa el id="Navbar" dentro del div que contiene la lista-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+				aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
-			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
+			<a class="navbar-brand order-sm-last" href="./index.html">Julián David Londoño</a>
 			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
-					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#" aria-current="page"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
 					<li class="nav-item"><a class="nav-link" href="./addedvalue.html"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
 					<li class="nav-item"><a class="nav-link" href="./resources.html"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
 				</ul>
@@ -39,127 +34,165 @@
 		</div>
 	</nav>
 
-	<header class="jumbotron">
-		<div class="container">
-			<div class="row row-header">
-				<div class="col-12 col-sm-8">
-					<h1>Education</h1>
-					<p>Below are listed my careers and main courses studied so far: </p>
+	<main>
+		<section class="value-hero education-hero" aria-labelledby="education-title">
+			<div class="value-hero-grid" aria-hidden="true"></div>
+			<div class="container value-hero-inner">
+				<p class="value-eyebrow"><span class="value-status-dot"></span> LEARNING JOURNEY / EDUCATION</p>
+				<h1 id="education-title">A foundation in engineering, strengthened through lifelong learning.</h1>
+				<p class="value-hero-copy">Formal education and practical training across operations, Power Platform, agile methods, and programming.</p>
+				<div class="value-hero-actions">
+					<a class="value-button" href="#education-cards">Explore my education <span aria-hidden="true">↓</span></a>
+					<a class="value-secondary-link" href="./experience.html">See my experience <span aria-hidden="true">↗</span></a>
 				</div>
-				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
+				<div class="value-hero-note"><span class="value-status-dot"></span> KNOWLEDGE GROWS AS IT IS SHARED</div>
 			</div>
-		</div>
-	</header> 
-	
-	<div class="container">
-		<div class="row row-header">
-			<div class="col-12 col-md-6 card">
-				<h3 class="card-header bg-primary">Professional</h3>
-				<div class="card-body">
-					<dl class="row row-content"><!--row content: linea divisoria-->
-						<dt class="col-4 col-md-4 col-lg-3">Grade</dt>
-						<dd class="col-8 col-md-8 col-lg-9"><h3>Operations Management Specialist</h3></dd>
-						<dt class="col-4 col-md-4 col-lg-3">Dates</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Jun 2011 to Aug 2012</dd>
-						<dt class="col-4 col-md-4 col-lg-3">Institution</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Universidad Nacional de Colombia</dd>
-					</dl>
-					<dl class="row row-content">
-						<dt class="col-4 col-md-4 col-lg-3">Grade</dt>
-						<dd class="col-8 col-md-8 col-lg-9"><h3>Industrial Engineer</h3></dd>
-						<dt class="col-4 col-md-4 col-lg-3">Dates</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Jul 2003 to Aug 2008</dd>
-						<dt class="col-4 col-md-4 col-lg-3">Institution</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Universidad Nacional de Colombia</dd>
-					</dl>
-				</div>
-			</div>
-			<div class="col-12 col-md-6 card">
-				<h3 class="card-header bg-warning">Optimization &amp; Automation</h3>
-				<div class="card-body">
-					<div class="row row-content">
-						<div class="col-4">
-							<!--aca voy a poner imagen de algo web-->
-							<img class="d-flex" src="img/power-platform-(360x360).png" alt="powerPlatform">							
-						</div>
-						<div class="col-8">
-							<h5>Microsoft Power Platform</h5>
-							<h2>Automate, Apps, BI</h2>
-							<a href="https://www.credly.com/go/hFTOjcLcxysP62BT7iF73g" target="_blank">Click here to view Badge</a>
-							<!--con target:blank se abre el link en nueva pestaña-->
-						</div>
-					</div>
-					<div class="row row-content">
-						<div class="col-4">
-							<!--aca voy a poner imagen de algo programacion-->
-							<img class="d-flex" src="img/database_640.png" alt="Programming">
-						</div>
-						<div class="col-8">
-							<h5>Office</h5>
-							<h2>Access:</h2>
-							<h6 class="offset-1">Reports, Forms, Queries</h6>
-							<h2>Excel:</h2>
-							<h6 class="offset-1">Macros, Pivot Tables</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-md-6 card">
-				<h3 class="card-header bg-success text-white">Agile</h3>
-				<div class="card-body">
-					<div class="row row-content">
-						<div class="col-4">
-							<img class="d-flex" src="img/scrum-master_360x360.png" alt="scrum">
-						</div>
-						<div class="col-8">
-							<h2>SCRUM MASTER</h2>
-							<h6>November 2022</h6>							
-							<a href="https://www.credly.com/badges/b198887c-0942-404c-8e0b-21de4610aa04/public_url" target="_blank">Click here to view Badge</a>
-						</div>
-					</div>
-					<dl class="row row-content">
-						<dt class="col-4 col-md-4 col-lg-3">Course</dt>
-						<dd class="col-8 col-md-8 col-lg-9"><h3>Lean Manufacturing</h3></dd>
-						<dt class="col-4 col-md-4 col-lg-3">Dates</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Jan to Apr 2011</dd>
-						<dt class="col-4 col-md-4 col-lg-3">Institution</dt>
-						<dd class="col-8 col-md-8 col-lg-9">Manizales chamber of commerce</dd>
-					</dl>
-				</div>
-			</div>
-			<div class="col-12 col-md-6 card">
-				<h3 class="card-header bg-info">Web &amp; Programming</h3>
-				<div class="card-body">
-					<div class="row row-content">
-						<div class="col-4">
-							<!--aca voy a poner imagen de algo web-->
-							<img class="d-flex" src="img/html.png" alt="web">
-						</div>
-						<div class="col-8">
-							<br><h3>Html, Css, Javascript</h3>
-						</div>
-					</div>
-					<div class="row row-content">
-						<div class="media col-4">
-							<!--aca voy a poner imagen de algo programacion-->
-							<img class="d-flex" src="img/code.jpg" alt="Programming">
-						</div>
-						<div class="col-8">
-							<br><h3>Python for Data Analysis</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		</section>
 
-	<footer class="footer">
+		<section class="value-snapshot education-section" id="education-cards" aria-labelledby="education-heading">
+			<div class="container">
+				<div class="value-section-heading">
+					<p class="value-eyebrow">EDUCATION &amp; PROFESSIONAL DEVELOPMENT</p>
+					<h2 id="education-heading">Learning that connects <span>engineering and digital delivery.</span></h2>
+					<p>Degrees, certifications, and technical skills built through study and hands-on practice.</p>
+				</div>
+
+				<div class="education-grid">
+					<article class="card education-card">
+						<h2 class="card-header bg-primary">Professional</h2>
+						<div class="card-body education-card-body">
+							<div class="education-credential">
+								<dl class="education-meta">
+									<div class="education-meta-item">
+										<dt>Grade</dt>
+										<dd><h3>Operations Management Specialist</h3></dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Dates</dt>
+										<dd>Jun 2011 to Aug 2012</dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Institution</dt>
+										<dd>Universidad Nacional de Colombia</dd>
+									</div>
+								</dl>
+							</div>
+							<div class="education-credential">
+								<dl class="education-meta">
+									<div class="education-meta-item">
+										<dt>Grade</dt>
+										<dd><h3>Industrial Engineer</h3></dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Dates</dt>
+										<dd>Jul 2003 to Aug 2008</dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Institution</dt>
+										<dd>Universidad Nacional de Colombia</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+					</article>
+
+					<article class="card education-card">
+						<h2 class="card-header bg-warning">Optimization &amp; Automation</h2>
+						<div class="card-body education-card-body">
+							<div class="education-topic">
+								<div class="education-topic-media">
+									<img src="img/power-platform-(360x360).png" alt="Power Platform logo">
+								</div>
+								<div class="education-topic-copy">
+									<p class="education-topic-label">Microsoft Power Platform</p>
+									<h3>Power Automate, Power Apps, Power BI</h3>
+									<a class="education-badge-link" href="https://www.credly.com/go/hFTOjcLcxysP62BT7iF73g" target="_blank" rel="noopener noreferrer">View badge <span aria-hidden="true">↗</span></a>
+								</div>
+							</div>
+							<div class="education-topic">
+								<div class="education-topic-media">
+									<img src="img/database_640.png" alt="Database illustration">
+								</div>
+								<div class="education-topic-copy">
+									<p class="education-topic-label">Office</p>
+									<div class="education-skill">
+										<h3>Access</h3>
+										<p>Reports, Forms, Queries</p>
+									</div>
+									<div class="education-skill">
+										<h3>Excel</h3>
+										<p>Macros, Pivot Tables</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="card education-card">
+						<h2 class="card-header bg-success text-white">Agile</h2>
+						<div class="card-body education-card-body">
+							<div class="education-topic">
+								<div class="education-topic-media">
+									<img src="img/scrum-master_360x360.png" alt="Scrum Master certification badge">
+								</div>
+								<div class="education-topic-copy">
+									<p class="education-topic-label">November 2022</p>
+									<h3>Scrum Master</h3>
+									<a class="education-badge-link" href="https://www.credly.com/badges/b198887c-0942-404c-8e0b-21de4610aa04/public_url" target="_blank" rel="noopener noreferrer">View badge <span aria-hidden="true">↗</span></a>
+								</div>
+							</div>
+							<div class="education-credential">
+								<dl class="education-meta">
+									<div class="education-meta-item">
+										<dt>Course</dt>
+										<dd><h3>Lean Manufacturing</h3></dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Dates</dt>
+										<dd>Jan to Apr 2011</dd>
+									</div>
+									<div class="education-meta-item">
+										<dt>Institution</dt>
+										<dd>Manizales chamber of commerce</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+					</article>
+
+					<article class="card education-card">
+						<h2 class="card-header bg-info">Web &amp; Programming</h2>
+						<div class="card-body education-card-body">
+							<div class="education-topic">
+								<div class="education-topic-media">
+									<img src="img/html.png" alt="HTML5 logo">
+								</div>
+								<div class="education-topic-copy education-topic-centered">
+									<h3>Power Fx, Html, JavaScript</h3>
+								</div>
+							</div>
+							<div class="education-topic">
+								<div class="education-topic-media">
+									<img src="img/code.jpg" alt="Programming code">
+								</div>
+								<div class="education-topic-copy education-topic-centered">
+									<h3>Dax, Power Query</h3>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer value-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-auto text-center"> <!--ocupa 12 col en xs y auto en medium y large-->
+				<div class="col-12 col-md-auto text-center">
 					<h5>Do you want to know further or contact me? Great! Here are my details:</h5>
 				</div>
-				<div class="offset-1 col-4 col-md"> <!--corro 1 columna , usa 4 col en xs y en medium y large: las que queden-->
+				<div class="offset-1 col-4 col-md">
 					<address>
 						<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/jullondono"><i class="fa fa-linkedin fa-lg"></i></a>
 						<a class="btn btn-success" href="https://wa.me/573136725990"><i class="fa fa-whatsapp fa-lg"></i></a>
@@ -167,18 +200,14 @@
 				</div>
 				<div class="col-6 col-md">
 					<address>
-						<i class="fa fa-phone fa-lg"></i>  (57) 3136725990
+						<i class="fa fa-phone fa-lg"></i> (57) 3136725990
 					</address>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+	<script src="home.js"></script>
 </body>
 
 </html>

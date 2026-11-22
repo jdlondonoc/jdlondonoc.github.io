@@ -96,6 +96,7 @@
 
 .value-hero h1 {
 	max-width: 910px;
+	min-height: 3.24em;
 	margin: 0;
 	color: #f3f7fc;
 	font-size: clamp(42px, 6vw, 72px);
@@ -219,6 +220,32 @@
 	margin: 0;
 	color: #6b7b8e;
 	font-size: 13px !important;
+}
+
+.value-approach .value-section-heading > p:last-child {
+	max-width: 760px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.value-approach .value-section-heading {
+		max-width: none;
+	}
+
+	#approach-heading {
+		font-size: 29px;
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 992px) {
+	.value-approach .value-section-heading {
+		max-width: none;
+	}
+
+	#approach-heading {
+		font-size: clamp(29px, 3.25vw, 42px);
+		white-space: nowrap;
+	}
 }
 
 .value-metrics {
@@ -499,6 +526,7 @@
 	}
 
 	.value-hero h1 {
+		min-height: 5.4em;
 		font-size: clamp(38px, 9.5vw, 58px);
 	}
 
@@ -535,7 +563,17 @@
 	}
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.value-hero h1 {
+		min-height: 4.32em;
+	}
+}
+
 @media (max-width: 420px) {
+	.value-hero h1 {
+		min-height: 6.48em;
+	}
+
 	.value-metric {
 		min-height: 128px;
 		padding: 14px;

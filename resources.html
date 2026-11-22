@@ -2,41 +2,35 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<!-- Bootstrap CSS -->
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore interactive tools, Python examples, Excel resources, and Power Platform tutorials by Julián David Londoño.">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
-	<!--Added Pyscript for Python-->
-	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-	<!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
 	<link rel="stylesheet" href="css/styles.css">
-	<py-env>
-- matplotlib
-	</py-env>
-	<title>Julian's Resources</title>
-	<link rel="icon" type="img/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/addedvalue.css">
+	<link rel="stylesheet" href="css/resources.css">
+	<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+	<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+	<title>Resources | Julián David Londoño</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
 </head>
 
-<body>
-	<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+<body class="value-page resource-page">
+	<nav class="navbar navbar-dark navbar-expand-md fixed-top value-nav" aria-label="Main navigation">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+				aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand order-sm-last d-none d-sm-block" href="./index.html">Julián David Londoño Cifuentes</a><!--Oculto en SM-->
-			<a class="navbar-brand order-sm-last d-block d-sm-none" href="./index.html">Julián David Londoño</a><!--Solo muestra en SM, agregué este para que la barra no sea mas grande por usar el nombre completo-->
+			<a class="navbar-brand order-sm-last" href="./index.html">Julián David Londoño</a>
 			<div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="./experience.html"><span class="fa fa-industry fa-lg"></span> Experience</a></li>
 					<li class="nav-item"><a class="nav-link" href="./education.html"><span class="fa fa-graduation-cap fa-lg"></span> Education</a></li>
 					<li class="nav-item"><a class="nav-link" href="./addedvalue.html"><span class="fa fa-user-plus fa-lg"></span> Added Value</a></li>
-					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#" aria-current="page"><span class="fa fa-gear fa-lg"></span> Resources</a></li>
 				</ul>
 			</div>
 		</div>
@@ -101,7 +95,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					
+						<p id="pythonStatus" class="small text-muted" role="status" aria-live="polite">Loading Python tools...</p>
 						<p>Today's Date is: <label id="date"></label></p>
 						<div id="hi"></div>
 
@@ -110,7 +104,7 @@
 								<input type="text" class="form-control form-control-sm mr-1" id="name" placeholder="Your name">
 							</div>
 							<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
-								<button type="submit" class="btn btn-success btn-sm ml-1" id="namebtn" pys-onClick='saludo'> Go </button>
+								<button type="button" class="btn btn-success btn-sm ml-1" id="namebtn" disabled> Go </button>
 							</div>
 						</div>
 
@@ -118,19 +112,15 @@
 
 						<div class="row row-header p-md-1" id="inputInterest" style='display:none'>
 							<div class="col-xs-2 col-sm-3 col-md-4 col-lg-4">
-								<input type="text" class="form-control form-control-sm" id="interested">
+								<input type="text" class="form-control form-control-sm" id="interested" aria-label="Are you interested in data visualization?" placeholder="Yes or no">
 							</div>
 							<div class="col-xs-2 col-6">
-								<button type="submit" class="btn btn-success btn-sm" id="interestbtn" pys-onClick='interes'> Go </button>
+								<button type="button" class="btn btn-success btn-sm" id="interestbtn" disabled> Go </button>
 							</div>
 						</div>
 						<div id="interest"></div>
 						<div id="graficos"></div>
 						<div id="grafInsight"></div>
-						<!--PY-SCRIPT: hay 2 formas: 1 incluyendo el cod dentro de <py-script> o dos: usando src y creando archivo aparte (uso esta ultima)
-						<py-script>	import datetime as dt 	print ("hello")	 pyscript.write('date',dt.date.today().strftime('%A %B %d, %Y'))
-						</py-script> <p>Today's Date is: <label id="date"></label></p>	-->
-						<py-script src="./main.py" output="graficos"></py-script>						
 				</div>
 			</div>
 		</div>
@@ -168,65 +158,71 @@
 		</div>
 	</div>
 
-	<!--JUMBOTRON-->
-	<header class="jumbotron">
-		<div class="container">
-			<div class="row row-header">
-				<div class="col-12 col-sm-8">
-					<p><strong>Utilities and Resources</strong></p>
-					<h1>Here you can find some useful resources which are not found so easily on web </h1>
+	<main>
+		<section class="value-hero resource-hero" aria-labelledby="resources-title">
+			<div class="value-hero-grid" aria-hidden="true"></div>
+			<div class="container value-hero-inner">
+				<p class="value-eyebrow"><span class="value-status-dot"></span> RESOURCES / TOOLS &amp; LEARNING</p>
+				<h1 id="resources-title">Practical tools and ideas to put to work.</h1>
+				<p class="value-hero-copy">Explore interactive utilities, Python examples, Excel resources, and Power Platform tutorials.</p>
+				<div class="value-hero-actions">
+					<a class="value-button" href="#resource-grid">Explore resources <span aria-hidden="true">↓</span></a>
+					<a class="value-secondary-link" href="./addedvalue.html">How I add value <span aria-hidden="true">↗</span></a>
 				</div>
-				<div class="d-none d-sm-block col-sm-4"><br><em>"Knowledge grows as it is Shared"</em></div>
+				<div class="value-hero-note"><span class="value-status-dot"></span> TOOLS · CODE · CONTINUOUS LEARNING</div>
 			</div>
-		</div>
-	</header>
+		</section>
 
-	<div class="container">
-		<div class="row row-content text-center">
-			<div class="col-12 col-md-6 col-lg-4 p-2">
-				<div class="btn-group">
-					<a href="#CalcuModal" class="btn btn-block nav-link btn-warning"
-					   data-toggle="modal" data-html="true">
-						<strong>Temperature Calculator</strong>
-					</a>
+		<section class="value-snapshot resource-section" id="resource-grid" aria-labelledby="resource-heading">
+			<div class="container">
+				<div class="value-section-heading">
+					<p class="value-eyebrow">01 / EXPLORE THE COLLECTION</p>
+					<h2 id="resource-heading">Resources for <span>learning and getting things done.</span></h2>
+					<p>Choose a tool, example, or tutorial to get started.</p>
 				</div>
-				<br />Convert temperatures from Farehnheit to celsius and viceversa
-			</div>
-			<div class="col-12 col-md-6 col-lg-4 p-2">
-				<div class="btn-group">
-					<a href="#PythModal" class="btn btn-block nav-link btn-info"
-					   data-toggle="modal" data-html="true">
-						<strong>Python Program</strong>
-					</a>
-				</div>
-				<br />Python functions and chart added through Pyscript
-			</div>
-			<div class="col-12 col-md-6 col-lg-4 p-2"><!--el contenido de excel lo pasé a otro html para minimizar tiempo de carga, por lo tanto quito el modal de aqui-->
-				<div class="btn-group">
-					<a href="./excel.html" class="btn btn-block nav-link btn-success">
-						<strong>Excel Explanations and files</strong>
-					</a>
-				</div>
-				<br />Excel files with useful functions which you can edit online or download
-			</div>
-			<div class="col-12 col-md-6 col-lg-4 p-2">
-				<div class="btn-group">
-					<a href="#PowerModal" class="btn btn-block nav-link btn-primary"
-					   data-toggle="modal" data-html="true">
-						<strong>Power Platform Tutorials</strong>
-					</a>
-				</div>
-				<br />Let me teach you some concepts about Power Platform
-			</div>
-		</div>
-	</div>
 
-	<footer class="footer">
+				<div class="resource-grid">
+					<a href="#CalcuModal" class="btn btn-warning resource-button"
+						data-toggle="modal" data-target="#CalcuModal" data-html="true">
+						<span class="resource-button-copy">
+							<strong>Temperature Calculator</strong>
+							<span>Convert temperatures between Fahrenheit and Celsius.</span>
+						</span>
+						<i class="fa fa-thermometer-half resource-button-icon" aria-hidden="true"></i>
+					</a>
+					<a href="#PythModal" class="btn btn-info resource-button"
+						data-toggle="modal" data-target="#PythModal" data-html="true">
+						<span class="resource-button-copy">
+							<strong>Python Program</strong>
+							<span>Try Python functions and charts powered by PyScript.</span>
+						</span>
+						<i class="fa fa-code resource-button-icon" aria-hidden="true"></i>
+					</a>
+					<a href="./excel.html" class="btn btn-success resource-button">
+						<span class="resource-button-copy">
+							<strong>Excel Explanations and Files</strong>
+							<span>Explore useful functions and files to edit online or download.</span>
+						</span>
+						<i class="fa fa-file-excel-o resource-button-icon" aria-hidden="true"></i>
+					</a>
+					<a href="#PowerModal" class="btn btn-primary resource-button"
+						data-toggle="modal" data-target="#PowerModal" data-html="true">
+						<span class="resource-button-copy">
+							<strong>Power Platform Tutorials</strong>
+							<span>Learn concepts and ideas for Power Platform solutions.</span>
+						</span>
+						<i class="fa fa-play-circle resource-button-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer value-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-auto text-center">
-					<!--ocupa 12 col en xs y auto en medium y large-->
-					<h5>Interested in any resource? do you want to know more? here is my contact info:</h5>
+					<h5>Do you want to know further or contact me? Great! Here are my details:</h5>
 				</div>
 				<div class="offset-1 col-4 col-md">
 					<address>
@@ -246,8 +242,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-	<!--<script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+	<script type="py" src="./main.py" config='{"packages":["matplotlib"]}'></script>
 	<!--CALCULADORA-->
 	<script>
 		$(document).ready(function () {
@@ -264,9 +259,6 @@
 				else {
 					$('#FinTemp').val((valor * (9 / 5)) + 32);
 				};
-			});
-			$('#namebtn').click(function () {
-				document.getElementById("inputInterest").style.display = "flex";
 			});
 		});
 		/*a continuacion ingreso funcion para timer Countdown*/
